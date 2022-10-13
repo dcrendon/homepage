@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+body{
+  font-family: 'Orbitron', sans-serif;
+  height: 100vh;
+  width: 100vw; 
+  background-color: black;
+  overflow: hidden;
+  margin: 0px
+}
+
+#overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right top, #000000, #241119, #401a2e, #5c2248, #772c67, #772c67, #772c67, #772c67, #5c2248, #401a2e, #241119, #000000);
+  z-index: 2;
+  animation: pulse 20s linear infinite;
+  animation-direction: alternate;
+}
+
+.icon:hover > svg{
+  fill: black;
+}
+.image-container{
+  position: relative; 
+  display: flex; 
+  justify-content: center;
+}
+
+.icon-container{
+  display: flex; 
+  justify-content:end;
+}
+
+.name-container{
+  position: relative; 
+  color:white; 
+  z-index: 2; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100%; 
+  flex-direction: column;
+}
+.name{
+  font-weight: bold; 
+  font-size: 5rem; 
+  margin:0px; 
+  text-align: center;
+}
+
+.img-position{
+  position: absolute;
+  max-width: 100%;
+  /* max-height: 100%; */
+}
+
+.rotate{
+  animation: rotate 150s ease-in infinite;
+  animation-delay: .5s;
+}
+.rotate2{
+  animation: rotate2 100s ease-in infinite;
+  animation-delay: .5s;
+}
+.rotate3{
+  animation: rotate 125s ease-in infinite;
+  animation-delay: .5s;
+}
+.rotate4{
+  animation: rotate2 200s ease-in infinite;
+  animation-delay: .5s;
+}
+
+@keyframes rotate {
+  from{
+    transform: rotate(0deg)
+  }
+  to{
+    transform: rotate(360deg)
+  }
+}
+@keyframes rotate2 {
+  from{
+    transform: rotate(0deg)
+  }
+  to{
+    transform: rotate(-360deg)
+  }
+}
+@keyframes pulse {
+  from{
+    opacity: .1
+  }
+  to{
+    opacity: .5
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .img-position{
+    max-width: unset;
+    height: 100vh;
+  }
+  .icon-container{
+    justify-content: center;
+  }
+}
