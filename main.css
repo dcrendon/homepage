@@ -6,7 +6,8 @@ body{
   width: 100vw; 
   background-color: black;
   overflow: hidden;
-  margin: 0px
+  margin: 0px;
+  position: fixed;
 }
 
 #overlay {
