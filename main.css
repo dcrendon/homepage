@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@1,700&display=swap');
 
 body{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Space Mono', monospace;
   height: 100vh;
   width: 100vw; 
   background-color: black;
@@ -24,8 +24,13 @@ body{
   animation-direction: alternate;
 }
 
-.icon:hover > svg{
-  fill: black;
+.icon:hover.gh > svg{
+  box-shadow: 0px 0px 15px 1px #fff;
+  border-radius: 1rem;
+}
+.icon:hover.txw > svg{
+  box-shadow: 0px 0px 15px 1px #fff;
+  border-radius: 5px;
 }
 .image-container{
   position: relative; 
@@ -35,23 +40,25 @@ body{
 
 .icon-container{
   display: flex; 
-  justify-content:end;
+  justify-content:start;
   align-items: center;
 }
 
-.name-container{
-  position: relative; 
-  color:white; 
-  z-index: 2; 
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  height: 100%; 
+.name-container {
+  position: relative;
+  color: white;
+  z-index: 2;
+  display: flex;
+  /* justify-content: center; */
+  align-items: end;
+  margin-right: 4rem;
+  margin-top: 3rem;
+  height: 100%;
   flex-direction: column;
 }
 .name{
   font-weight: 700; 
-  font-size: 4rem; 
+  font-size: 2.3rem; 
   margin:0px; 
   text-align: center;
   text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.1);
@@ -120,5 +127,11 @@ body{
   }
   .icon-container{
     justify-content: center;
+  }
+  .name-container{
+    align-items: center;
+    justify-content: center;
+    margin-right: unset;
+    margin-top: unset;
   }
 }
