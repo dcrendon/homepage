@@ -35,13 +35,15 @@ body{
   justify-content:start;
   align-items: center;
 }
+.icon{
+  margin-right: 1rem;
+}
 
 .name-container {
   position: relative;
   color: white;
   z-index: 2;
   display: flex;
-  /* justify-content: center; */
   align-items: end;
   margin-right: 4rem;
   margin-top: 3rem;
@@ -125,5 +127,6 @@ body{
     justify-content: center;
     margin-right: unset;
     margin-top: unset;
+    padding: 1rem;
   }
 }
