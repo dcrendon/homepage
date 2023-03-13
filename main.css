@@ -125,5 +125,6 @@ body{
     justify-content: center;
     margin-right: unset;
     margin-top: unset;
+    padding: 1rem;
   }
 }
