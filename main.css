@@ -24,6 +24,11 @@ body{
   animation-direction: alternate;
 }
 
+#code-list{
+  flex-direction: column; 
+  align-items: end;
+}
+
 .name-container a {
   color: white;
 }
@@ -70,7 +75,6 @@ body{
   max-width: 100%;
 }
 
-/* animations */
 .rotate-start{
   animation: rotate 2s ease-in-out;
   animation-delay: .5s;
@@ -97,6 +101,10 @@ body{
   /* animation-delay: .5s; */
 }
 
+.fadein{
+  animation: fadein .5s ease-in-out;
+}
+
 @keyframes rotate {
   from{
     transform: rotate(0deg)
@@ -121,8 +129,20 @@ body{
     opacity: .5
   }
 }
+@keyframes fadein {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
 
 @media only screen and (max-width: 900px) {
+  #code-list{
+    align-items: center;
+    margin-top: 1rem;
+  }
   .img-position{
     max-width: unset;
     height: 100vh;

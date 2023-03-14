@@ -4,9 +4,11 @@ const codeIcon = document.getElementById('code')
 const codeList = document.getElementById('code-list')
 
 codeIcon.addEventListener('click', () => {
-    if (codeList.style.display === "none") {
-        codeList.style.display = "flex";
+    if (codeList.style.display === 'none') {
+        codeList.classList.add('fadein')
+        codeList.style.display = 'flex'
     } else {
-        codeList.style.display = "none";
+        codeList.classList.remove('fadein')
+        codeList.style.display = 'none'
     }
 })
