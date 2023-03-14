@@ -24,6 +24,10 @@ body{
   animation-direction: alternate;
 }
 
+.name-container a {
+  color: white;
+}
+
 .image-container{
   position: relative; 
   display: flex; 
@@ -37,6 +41,9 @@ body{
 }
 .icon{
   margin-right: 1rem;
+}
+.icon:hover{
+  cursor: pointer;
 }
 
 .name-container {
@@ -63,6 +70,7 @@ body{
   max-width: 100%;
 }
 
+/* animations */
 .rotate-start{
   animation: rotate 2s ease-in-out;
   animation-delay: .5s;
