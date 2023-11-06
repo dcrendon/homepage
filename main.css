@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@1,700&display=swap');
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
 
 body{
-  font-family: 'Space Mono', monospace;
   height: 100vh;
   width: 100vw; 
   background-color: black;
@@ -25,23 +27,47 @@ body{
 }
 
 #code-list{
+  display: flex;
   flex-direction: column; 
-  align-items: end;
+  align-items: center;
 }
 
+#main-container{
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.name-container {
+  color: white;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 50vw;
+}
 .name-container a {
   color: white;
+  text-decoration: none;
 }
-
-.image-container{
-  position: relative; 
-  display: flex; 
-  justify-content: center;
+.name-container a:hover {
+  text-decoration: underline;
 }
-
+.name{
+  font-weight: 700; 
+  font-size: 2rem; 
+  margin:0px; 
+  text-align: center;
+  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.1);
+}
 .icon-container{
   display: flex; 
-  justify-content:start;
+  justify-content:center;
   align-items: center;
 }
 .icon{
@@ -51,25 +77,14 @@ body{
   cursor: pointer;
 }
 
-.name-container {
-  position: relative;
-  color: white;
-  z-index: 2;
-  display: flex;
-  align-items: end;
-  margin-right: 4rem;
-  margin-top: 3rem;
-  height: 100%;
-  flex-direction: column;
+.image-container{
+  position: relative; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 50vw;  
 }
-.name{
-  font-weight: 700; 
-  font-size: 2rem; 
-  margin:0px; 
-  text-align: center;
-  text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.1);
-}
-
 .img-position{
   position: absolute;
   max-width: 100%;
@@ -83,40 +98,17 @@ body{
   animation: rotate2 2s ease-in-out;
   animation-delay: .5s;
 }
-
 .rotate{
   animation: rotate 150s ease-in infinite;
-  /* animation-delay: .5s; */
 }
 .rotate2{
   animation: rotate2 100s ease-in infinite;
-  /* animation-delay: .5s; */
 }
 .rotate3{
   animation: rotate 125s ease-in infinite;
-  /* animation-delay: .5s; */
 }
 .rotate4{
   animation: rotate2 200s ease-in infinite;
-  /* animation-delay: .5s; */
-}
-
-.hidden {
-  display: none !important;
-}
-
-.fadein{
-  animation: fadein .5s ease-in-out;
-  display: flex;
-}
-
-.fadeout{
-  animation: fadeout .5s forwards;
-  display: flex;
-}
-
-#fullscreen-image {
-display: none;
 }
 
 @keyframes rotate {
@@ -143,57 +135,25 @@ display: none;
     opacity: .5
   }
 }
-@keyframes fadein {
-  from{
-    opacity: 0;
-  }
-  to{
-    opacity: 1;
-  }
-}
-@keyframes fadeout {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    display: none;
-  }
-}
 
-@media only screen and (max-width: 900px) {
-  #code-list{
-    align-items: center;
-    margin-top: 1rem;
+@media only screen and (max-width: 2000px) {
+  #main-container{
+    display: block;
   }
+  .name-container{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+  }
+  .image-container{
+    width: 100vw;
+    height: 100vh;
+  }
+}
+@media only screen and (max-width: 1300px) {
   .img-position{
     max-width: unset;
     height: 100vh;
-  }
-  .icon-container{
-    justify-content: center;
-  }
-  .name-container{
-    align-items: center;
-    justify-content: center;
-    margin-right: unset;
-    margin-top: unset;
-    padding: 1rem;
-  }
-}
-
-/* media query for ultrawide screens */
-@media only screen and (min-width: 1800px) {
-  .img-position{
-    display: none;
-  }
-  #fullscreen-image {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
   }
 }
