@@ -54,6 +54,7 @@ body{
 .name-container a {
   color: white;
   text-decoration: none;
+  padding-top: .25rem;
 }
 .name-container a:hover {
   text-decoration: underline;
