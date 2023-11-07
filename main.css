@@ -4,8 +4,8 @@
 }
 
 body{
-  height: 100vh;
-  width: 100vw; 
+  height: 100dvh;
+  width: 100dvw; 
   background-color: black;
   overflow: hidden;
   margin: 0px;
@@ -48,8 +48,8 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 50vw;
+  height: 100dvh;
+  width: 50dvw;
 }
 .name-container a {
   color: white;
@@ -82,8 +82,8 @@ body{
   display: flex; 
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 50vw;  
+  height: 100dvh;
+  width: 50dvw;  
 }
 .img-position{
   position: absolute;
@@ -141,19 +141,19 @@ body{
     display: block;
   }
   .name-container{
-    width: 100vw;
-    height: 100vh;
+    width: 100dvw;
+    height: 100dvh;
     position: absolute;
     top: 0;
   }
   .image-container{
-    width: 100vw;
-    height: 100vh;
+    width: 100dvw;
+    height: 100dvh;
   }
 }
 @media only screen and (max-width: 1300px) {
   .img-position{
     max-width: unset;
-    height: 100vh;
+    height: 100dvh;
   }
 }
