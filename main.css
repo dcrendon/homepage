@@ -93,6 +93,11 @@ body{
   align-items: center;
   height: 100dvh;
   width: 50dvw;  
+  background-image: url(/bg-wide-lr.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: black;
 }
 .img-position{
   position: absolute;
