@@ -1,8 +1,9 @@
 import './main.css';
+import 'animate.css';
 
 const codeIcon = document.getElementById('code')
 const codeList = document.getElementById('code-list')
 
 codeIcon.addEventListener('click', () => {
-    codeList.classList.toggle('hidden');
+    codeList.classList.toggle('hidden')
 });
