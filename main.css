@@ -23,8 +23,12 @@ body{
   position: fixed;
 }
 
+#name-icons{
+  transition: transform 0.5s;
+  position: fixed;
+}
 #code-list{
-  display: flex;
+  display: none;
   flex-direction: column; 
   align-items: center;
 }
