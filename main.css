@@ -1,39 +1,47 @@
 @font-face {
-  font-family: 'GeistSans';
+  font-family: "GeistSans";
   src: url(/GeistVariableVF.woff2);
 }
 
-:root { 
-  font-family: 'GeistSans', monospace;
+:root {
+  font-family: "GeistSans", monospace;
   font-size: 1.1rem;
 }
 @supports (font-variation-settings: normal) {
-  :root { 
-    font-family: 'GeistSans', monospace; 
+  :root {
+    font-family: "GeistSans", monospace;
     font-size: 1.1rem;
   }
 }
 
-body{
+html {
+  background-color: black;
+}
+
+body {
   height: 100dvh;
-  width: 100dvw; 
+  width: 100dvw;
   background-color: black;
   overflow: hidden;
   margin: 0px;
   position: fixed;
 }
 
-#name-icons{
+#name-icons {
   transition: transform 0.5s;
   position: fixed;
 }
-#code-list{
+#code-list {
   display: none;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 2rem;
+  border-radius: 1rem;
+  gap: 1rem;
 }
 
-#main-container{
+#main-container {
   display: flex;
   height: 100%;
   width: 100%;
@@ -56,122 +64,130 @@ body{
 .name-container a {
   color: white;
   text-decoration: none;
-  padding-top: .25rem;
+  padding-top: 0.25rem;
 }
 .name-container a:hover {
   text-decoration: underline;
 }
-.name{
-  font-weight: 700; 
-  font-size: 2rem; 
-  margin:0px; 
+.name {
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 0px;
   text-align: center;
   text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.1);
 }
-.icon-container{
-  display: flex; 
-  justify-content:center;
+.icon-container {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-.icon{
-  padding: .5rem;
+.icon {
+  padding: 0.5rem;
 }
-.icon:hover{
+.icon:hover {
   cursor: pointer;
 }
-.work-list{
+.work-list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 0;
+  margin-top: 0;
 }
 .work-list > span {
-  font-weight: 800;  
+  font-weight: 800;
 }
 
-.image-container{
-  position: relative; 
-  display: flex; 
+.image-container {
+  position: relative;
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 100dvh;
-  width: 50dvw;  
-  background-image: url(/bg-wide-lr.webp);
+  width: 50dvw;
+  /* background-image: url(/bg-wide-lr.webp); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: black;
 }
-.img-position{
+.img-position {
   position: absolute;
   max-width: 100%;
 }
 
-.rotate-start{
+.rotate-start {
   animation: rotate 2s ease-in-out;
-  animation-delay: .5s;
+  animation-delay: 0.5s;
 }
-.rotate-start-reverse{
+.rotate-start-reverse {
   animation: rotate2 2s ease-in-out;
-  animation-delay: .5s;
+  animation-delay: 0.5s;
 }
-.rotate{
+.rotate {
   animation: rotate 150s ease-in infinite;
 }
-.rotate2{
+.rotate2 {
   animation: rotate2 100s ease-in infinite;
 }
-.rotate3{
+.rotate3 {
   animation: rotate 125s ease-in infinite;
 }
-.rotate4{
+.rotate4 {
   animation: rotate2 200s ease-in infinite;
 }
 
 @keyframes rotate {
-  from{
-    transform: rotate(0deg)
+  from {
+    transform: rotate(0deg);
   }
-  to{
-    transform: rotate(360deg)
+  to {
+    transform: rotate(360deg);
   }
 }
 @keyframes rotate2 {
-  from{
-    transform: rotate(0deg)
+  from {
+    transform: rotate(0deg);
   }
-  to{
-    transform: rotate(-360deg)
+  to {
+    transform: rotate(-360deg);
   }
 }
 @keyframes pulse {
-  from{
-    opacity: .1
+  from {
+    opacity: 0.1;
   }
-  to{
-    opacity: .5
+  to {
+    opacity: 0.5;
   }
 }
 
 @media only screen and (max-width: 2000px) {
-  #main-container{
+  #main-container {
     display: block;
   }
-  .name-container{
+  .name-container {
     width: 100dvw;
     height: 100dvh;
     position: absolute;
     top: 0;
   }
-  .image-container{
+  .image-container {
     width: 100dvw;
     height: 100dvh;
   }
 }
 @media only screen and (max-width: 1300px) {
-  .img-position{
+  .img-position {
     max-width: unset;
     height: 100dvh;
+  }
+  #overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 }
