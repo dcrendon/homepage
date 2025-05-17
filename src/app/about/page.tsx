@@ -73,13 +73,13 @@ export default function About() {
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I’ve always been fascinated by technology and the creative possibilities it unlocks. My journey into software development began with curiosity, exploration, and a desire to understand how things work.
+              I’ve always liked taking things apart to figure out how they work, and eventually realized I could build things too. That curiosity led me into software development, where I get to combine creativity with problem-solving every day.
             </p>
             <p>
-              Over the years, I’ve worked on a wide variety of projects, from designing intuitive web applications to developing tools that help teams collaborate effectively. I thrive on tackling interesting technical challenges, always pushing myself to learn and grow.
+              Over the years, I’ve built everything from internal tools to public-facing platforms, with a focus on making things that are useful, reliable, and easy to navigate. I enjoy working across the stack, learning as I go, and finding clean solutions to messy problems.
             </p>
             <p>
-              Currently, I’m part of a team at NASA, where I contribute to building software that makes space exploration more accessible. My goal is to create technology that has a meaningful impact by solving problems elegantly and empowering people along the way.
+              Right now, I work with NASA, helping build open-source portals and public tools that let people explore the agency’s work more directly. I’m especially interested in projects that make complex systems feel approachable and useful to the people who rely on them.
             </p>
           </div>
         </div>
