@@ -300,7 +300,7 @@ function Projects() {
       name: 'Bebo AI',
       description:
         'My self hosted AI web ui. Created to provide access to AI tools for my family and friends.',
-      link: { href: 'https://beboai.org/', label: 'beboai.org' },
+      link: { href: 'https://ai.dcrendon.com/', label: 'ai.dcrendon.com' },
       logo: logoOpen,
       tech: 'Open Web UI, Docker, Python',
     }
