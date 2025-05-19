@@ -35,7 +35,7 @@ const projects = [
     name: 'Photo Gallery',
     description:
       'My self hosted photo gallery. I take a lot of photos and this is where I share them.',
-    link: { href: 'https://photos.bungus.life', label: 'photos.bungus.life' },
+    link: { href: 'https://photos.dcrendon.com/', label: 'photos.dcrendon.com' },
     logo: logoImmich,
   },
   {
