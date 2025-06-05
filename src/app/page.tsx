@@ -387,7 +387,7 @@ export default async function Home() {
             Software Engineer, Problem Solver, and Occasional Adventurer
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Daniel, a software engineer based in Houston, Texas. I build intuitive software and love tackling interesting technical challenges. Right now, I’m working with NASA to build open-source tools that help people discover and explore the agency’s work.
+            I’m Daniel, a software engineer based in Houston, Texas. Right now, I’m working with NASA to build open-source tools that help people discover and explore the agency’s work.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink

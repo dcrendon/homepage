@@ -12,7 +12,7 @@ export const metadata: Metadata = {
       'Daniel C. Rendon - Software Engineer, Problem Solver, and Occasional Adventurer',
   },
   description:
-    'I’m Daniel, a software engineer based in Houston, Texas. I build intuitive software and love tackling interesting technical challenges. Right now, I’m working with NASA to build open-source tools that help people discover and explore the agency’s work.',
+    'I’m Daniel, a software engineer based in Houston, Texas. Right now, I’m working with NASA to build open-source tools that help people discover and explore the agency’s work.',
   // alternates: {
   //   types: {
   //     'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
