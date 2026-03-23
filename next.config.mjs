@@ -4,13 +4,11 @@ import remarkGfm from 'remark-gfm'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // output: 'export',
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
-  experimental: {
-    outputFileTracingIncludes: {
-      '/articles/*': ['./src/app/articles/**/*.mdx'],
-    },
+  outputFileTracingIncludes: {
+    '/articles/*': ['./src/app/articles/**/*.mdx'],
   },
+  turbopack: {},
 }
 
 const withMDX = nextMDX({
